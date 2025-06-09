@@ -1,0 +1,75 @@
+# Configuration for Custom Chatbot with RAG
+
+# API Configuration
+api:
+  openai_model_embedding: "text-embedding-ada-002"
+  openai_model_completion: "gpt-3.5-turbo-instruct"
+  api_base: null  # Set to custom URL if needed
+  max_retries: 3
+  timeout: 30
+
+# Generation Parameters
+generation:
+  max_prompt_tokens: 1800
+  max_answer_tokens: 300
+  temperature: 0.7
+  top_p: 1.0
+
+# Retrieval Settings
+retrieval:
+  max_context_entries: 10
+  similarity_threshold: 0.8
+  batch_size: 5
+  embedding_dimension: 1536
+
+# Data Processing
+data:
+  file_path: "data/character_descriptions.csv"
+  enhanced_text_format: true
+  extract_traits: true
+  extract_relationships: true
+  extract_occupations: true
+  extract_age_groups: true
+
+# Features Configuration
+features:
+  enable_recommendations: true
+  enable_comparisons: true
+  enable_character_info: true
+  enable_trait_search: true
+  enable_setting_search: true
+  enable_medium_search: true
+
+# Interface Settings
+interface:
+  gradio:
+    title: "Character Chatbot with RAG"
+    theme: "soft"
+    share: false
+    debug: false
+    max_file_size: "10mb"
+  
+  cli:
+    show_help_on_start: true
+    enable_colors: true
+    max_history: 100
+
+# Performance Settings
+performance:
+  cache_embeddings: true
+  cache_directory: ".cache"
+  use_fallback_embeddings: true
+  batch_processing: true
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null  # null for console only, or path to log file
+
+# Advanced Settings
+advanced:
+  question_enhancement: true
+  context_optimization: true
+  error_recovery: true
+  statistical_analysis: false
