@@ -335,12 +335,6 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 - The open-source community for NLP tools and techniques
 - Contributors to the character descriptions dataset
 
-## Support
-
-For questions, issues, or contributions:
-- **GitHub Issues**: [Report bugs or request features](https://github.com/yourusername/custom-chatbot/issues)
-- **Discussions**: [Community discussions](https://github.com/yourusername/custom-chatbot/discussions)
-- **Email**: your.email@example.com
 
 ---
 
